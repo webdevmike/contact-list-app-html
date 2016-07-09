@@ -1,0 +1,17 @@
+/**
+---------------------------------------------------------------
+ * 4.0 - Footer
+---------------------------------------------------------------
+**/
+
+footer {
+	background-color:$color-four;
+	text-align:center;
+	padding:10px 0;
+	margin-bottom:20px;
+
+	.note {
+		font-size:18px;
+		font-weight:300;
+	}
+}

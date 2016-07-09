@@ -1,0 +1,228 @@
+/**
+---------------------------------------------------------------
+ * Table of Contents
+ * 
+ * 1.0 - Reset & General
+ * 2.0 - Header
+ * 3.0 - Main Content
+ * 4.0 - Footer
+ * 5.0 - Media Queries
+ *
+---------------------------------------------------------------
+**/
+
+$font-one: 'Source Sans Pro', sans-serif;
+
+$color-one: #e24d33; // red
+$color-two: #232323; // dark gray
+$color-three: #c3c3c3; // medium gray
+$color-four: rgba(0,0,0,0.03); // light gray
+
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {
+	box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-ms-box-shadow: $shadow;
+	-o-box-shadow: $shadow;
+}
+
+@mixin transition($property, $time) {
+	transition: $property $time;
+	-webkit-transition: $property $time;
+	-moz-transition: $property $time;
+	-ms-transition: $property $time;
+	-o-transition: $property $time;
+}
+
+@mixin background-size($size) {
+	background-size: $size;
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-o-background-size: $size;
+}
+
+@mixin transform($degrees) {
+	transform:rotate($degrees);
+	-webkit-transform:rotate($degrees);
+	-moz-transform:rotate($degrees);
+	-ms-transform:rotate($degrees)
+}
+
+
+/**
+---------------------------------------------------------------
+ * 1.0 - Reset & General
+---------------------------------------------------------------
+**/
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+*:focus {
+	outline:0;
+}
+
+img {
+	border:none;	
+	max-width:100%;
+	height:auto;
+}
+
+iframe {
+	border:0;
+	width:100%;
+}
+
+.clear:after {
+	display:block;
+	clear:both;
+	content:"";
+}
+
+body {
+	font-size:16px;
+	font-family: $font-one;
+	color: $color-two;
+	-webkit-text-size-adjust:100%;
+}
+
+h1,
+h2,
+h3 {
+	font-weight:300;
+	line-height:1;
+}
+
+h2 {
+	font-size:32px;
+	color:$color-one;
+	border-bottom:1px solid #bdbdbd;
+	padding-bottom: 10px;
+}
+
+p {
+	padding-bottom:20px;
+	font-size: 15px;
+}
+
+.content-container {
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+	position:relative;
+	@extend .clear;
+}
+
+a {
+	color: $color-one;
+	@include transition(all, .3s);
+
+	&:hover {
+		color: $color-two;
+	}
+}
+
+header, 
+nav, 
+main, 
+section, 
+article, 
+aside, 
+footer {
+	display:block
+}
+
+button {
+	-webkit-appearance: none;
+    @include border-radius(0);
+
+	&.generic-btn {
+		background-color:$color-one;
+		border:0;
+		color:#ffffff;
+		font-family: $font-one;
+		font-weight:300;
+		font-size:22px;
+		line-height:1;
+		padding:15px 55px;
+		cursor:pointer;
+		@include transition(all, .3s);
+
+		&:hover {
+			background-color: rgba(226, 77, 51, 0.9);
+		}
+	}
+}
+
+
+/**
+---------------------------------------------------------------
+ * 2.0 - Header
+---------------------------------------------------------------
+**/
+
+@import 'header-main';
+
+/**
+---------------------------------------------------------------
+ * 3.0 - Main Content
+---------------------------------------------------------------
+**/
+
+@import 'main-content';
+
+/**
+---------------------------------------------------------------
+ * 4.0 - Footer
+---------------------------------------------------------------
+**/
+
+@import 'footer-main';
+
+/**
+
+---------------------------------------------------------------
+ * 5.0 - Media Queries
+ *
+ * 1020 pixels (max)
+---------------------------------------------------------------
+**/
+
+@import 'queries-1020px';
+
+/**
+---------------------------------------------------------------
+ * 788 pixels (max)
+---------------------------------------------------------------
+**/
+
+@import 'queries-788px';
+
+/**
+---------------------------------------------------------------
+ * 570 pixels (max)
+---------------------------------------------------------------
+**/
+
+@import 'queries-570px';
+
+/**
+---------------------------------------------------------------
+ * 380 pixels (max)
+---------------------------------------------------------------
+**/
+
+@import 'queries-380px';

@@ -1,0 +1,62 @@
+/**
+---------------------------------------------------------------
+ * 2.0 - Header
+---------------------------------------------------------------
+**/
+
+header {
+	height:80px;
+	background-color:$color-four;
+
+	.logo {
+		float:left;
+		margin-top:22px;
+		@extend .clear;
+
+		h1 {
+			float:left;
+			color:$color-one;
+			font-size:36px;
+		}
+
+		.fa {
+			float:left;
+			margin-right:12px;
+			color:$color-three;
+			font-size:36px;
+			line-height:1;
+		}
+	}
+
+	nav {
+		float:right;
+		margin-top:30px;
+
+		ul.main-nav {
+			list-style-type:none;
+			@extend .clear;
+
+			li {
+				float:left;
+				padding-right:30px;
+
+				a {
+					font-size:17px;
+					line-height:1;
+					font-weight:300;
+					color:$color-two;
+					text-decoration:none;
+
+					&:hover {
+						color:$color-one;
+						text-decoration:underline;
+					}
+				}
+
+				&:last-child {
+					padding-right:0;
+				}
+			}
+		}
+	}
+}
