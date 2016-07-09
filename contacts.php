@@ -28,7 +28,7 @@
 						</ul>
 					</div>
 					<div class="edit">
-						<button type="button" class="generic-btn">Edit</button>
+						<a href="#" class="generic-btn">Edit</a>
 					</div>
 				</li>
 				<li>
@@ -45,7 +45,7 @@
 						</ul>
 					</div>
 					<div class="edit">
-						<button type="button" class="generic-btn">Edit</button>
+						<a href="#" class="generic-btn">Edit</a>
 					</div>
 				</li>
 				<li>
@@ -63,7 +63,7 @@
 						</ul>
 					</div>
 					<div class="edit">
-						<button type="button" class="generic-btn">Edit</button>
+						<a href="#" class="generic-btn">Edit</a>
 					</div>
 				</li>
 			</ul>

@@ -87,6 +87,9 @@ a {
 a:hover {
   color: #232323;
 }
+a.generic-btn {
+  text-decoration: none;
+}
 
 header,
 nav,
@@ -98,17 +101,9 @@ footer {
   display: block;
 }
 
-button {
-  -webkit-appearance: none;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-}
-button.generic-btn {
+button.generic-btn,
+a.generic-btn {
   background-color: #e24d33;
-  border: 0;
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -122,8 +117,21 @@ button.generic-btn {
   -ms-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
 }
-button.generic-btn:hover {
+button.generic-btn:hover,
+a.generic-btn:hover {
   background-color: rgba(226, 77, 51, 0.9);
+}
+
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+button.generic-btn {
+  border: 0;
 }
 
 /**
@@ -182,7 +190,7 @@ header nav ul.main-nav li a {
   color: #232323;
   text-decoration: none;
 }
-header nav ul.main-nav li a:hover {
+header nav ul.main-nav li a:hover, header nav ul.main-nav li a.current {
   color: #e24d33;
   text-decoration: underline;
 }
@@ -248,12 +256,11 @@ main ul.contact-list > li .address ul li:first-child {
 main ul.contact-list > li .edit {
   float: right;
 }
-main ul.contact-list > li .edit button.generic-btn {
+main ul.contact-list > li .edit a.generic-btn {
   font-size: 18px;
   padding: 10px 30px;
 }
 main .empty {
-  display: none;
   font-size: 22px;
   font-weight: 300;
 }
@@ -460,7 +467,8 @@ footer .note {
     max-width: 550px;
   }
 
-  button.generic-btn {
+  button.generic-btn,
+  a.generic-btn {
     font-size: 19px;
     padding: 15px 30px;
   }

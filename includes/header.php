@@ -11,7 +11,7 @@
 				<i class="fa fa-bars"></i>
 			</div>
 			<ul class="main-nav">
-				<li><a href="#">Home</a></li>
+				<li><a href="#" class="current">Home</a></li>
 				<li><a href="#">Add New Contact</a></li>
 				<li><a href="#">View All Contacts</a></li>
 			</ul>

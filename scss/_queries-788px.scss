@@ -4,9 +4,13 @@
 		max-width:550px;
 	}
 
-	button.generic-btn {
-		font-size:19px;
-		padding:15px 30px;
+	button,
+	a {
+
+		&.generic-btn {
+			font-size:19px;
+			padding:15px 30px;
+		}
 	}
 
 	h2 {

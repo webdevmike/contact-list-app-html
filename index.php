@@ -12,11 +12,11 @@
 
 			<ul class="home-nav">
 				<li>
-					<button type="button" class="generic-btn">Add New Contact</button>
+					<a href="#" class="generic-btn">Add New Contact</a>
 				</li>
 				<li>-or-</li>
 				<li>
-					<button type="button" class="generic-btn">View All Contacts</button>
+					<a href="#" class="generic-btn">View All Contacts</a>
 				</li>
 			</ul>
 
@@ -39,7 +39,7 @@
 							</ul>
 						</div>
 						<div class="edit">
-							<button type="button" class="generic-btn">Edit</button>
+							<a href="#" class="generic-btn">Edit</a>
 						</div>
 					</li>
 					<li>
@@ -56,7 +56,7 @@
 							</ul>
 						</div>
 						<div class="edit">
-							<button type="button" class="generic-btn">Edit</button>
+							<a href="#" class="generic-btn">Edit</a>
 						</div>
 					</li>
 					<li>
@@ -74,7 +74,7 @@
 							</ul>
 						</div>
 						<div class="edit">
-							<button type="button" class="generic-btn">Edit</button>
+							<a href="#" class="generic-btn">Edit</a>
 						</div>
 					</li>
 				</ul>

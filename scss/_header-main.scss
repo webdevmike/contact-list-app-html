@@ -57,7 +57,8 @@ header {
 					color:$color-two;
 					text-decoration:none;
 
-					&:hover {
+					&:hover,
+					&.current {
 						color:$color-one;
 						text-decoration:underline;
 					}

@@ -61,7 +61,7 @@ main {
 			.edit {
 				float:right;
 
-				button.generic-btn {
+				a.generic-btn {
 					font-size: 18px;
 					padding: 10px 30px;
 				}
@@ -70,7 +70,6 @@ main {
 	}
 
 	.empty {
-		display:none;
 		font-size:22px;
 		font-weight:300;
 	}

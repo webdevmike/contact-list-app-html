@@ -133,6 +133,10 @@ a {
 	&:hover {
 		color: $color-two;
 	}
+
+	&.generic-btn {
+		text-decoration:none;
+	}
 }
 
 header, 
@@ -145,13 +149,11 @@ footer {
 	display:block
 }
 
-button {
-	-webkit-appearance: none;
-    @include border-radius(0);
+button,
+a {
 
 	&.generic-btn {
 		background-color:$color-one;
-		border:0;
 		color:#ffffff;
 		font-family: $font-one;
 		font-weight:300;
@@ -165,6 +167,15 @@ button {
 			background-color: rgba(226, 77, 51, 0.9);
 		}
 	}
+}
+
+button {
+	-webkit-appearance: none;
+    @include border-radius(0);
+
+    &.generic-btn {
+    	border:0;
+    }
 }
 
 
