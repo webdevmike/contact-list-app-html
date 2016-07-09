@@ -4,4 +4,143 @@
 		max-width:550px;
 	}
 
+	button.generic-btn {
+		font-size:19px;
+		padding:15px 30px;
+	}
+
+	h2 {
+		font-size:30px;
+	}
+
+	header {
+
+		.logo {
+
+			h1,
+			.fa {
+				font-size:30px;
+			}
+		}
+
+		nav {
+			margin-top:22px;
+
+			.hamburger-icon {
+				display:block;
+				float:right;
+
+				.fa {
+					font-size:36px;
+					line-height:1;
+				}
+			}
+
+			ul.main-nav {
+				display:none;
+				position: absolute;
+				top: 80px;
+				left: 0;
+				width: 100%;
+				z-index:2;
+
+				li {
+					display:block;
+					float:none;
+					text-align:center;
+					padding-right:0;
+					border-bottom:1px solid $color-three;
+
+					a {
+						display:block;
+						background-color:#f8f8f8;
+						padding:15px 0;
+					}
+				}
+			}
+
+			&.show-mobile-menu {
+
+				ul.main-nav {
+					display:block;
+				}
+			}
+		}
+	}
+
+	main {
+		min-height:0;
+
+		&.home {
+
+			ul.home-nav {
+				padding:60px 0;
+
+				li {
+					font-size:19px;
+
+					&:nth-child(2) {
+						padding:0 25px;
+					}
+				}
+			}
+
+			.vip-contacts {
+				padding-bottom:60px;
+			}
+		}
+
+		&.no-page {
+
+			h1 {
+				font-size:36px;
+				padding: 60px 0;
+			}
+		}
+
+		&.single-contact {
+
+			.contact-info {
+				float:none;
+
+				.row {
+
+					input[type="text"],
+					input[type="email"] {
+						width:425px;
+					}
+
+					&.vip {
+
+						label {
+							width:425px;
+						}
+					}
+				}
+			}
+
+			.contact-preview {
+				float:none;
+				margin-left: 70px;
+				margin-top: 40px;
+			}
+
+			&.edit {
+
+				.contact-info {
+
+					.actions {
+						width:425px;
+						float:right;
+
+						button.generic-btn {
+							margin-left:0;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
 }

@@ -159,7 +159,7 @@ button {
 		line-height:1;
 		padding:15px 55px;
 		cursor:pointer;
-		@include transition(all, .3s);
+		@include transition(background-color, .3s);
 
 		&:hover {
 			background-color: rgba(226, 77, 51, 0.9);

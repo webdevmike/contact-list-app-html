@@ -17,6 +17,12 @@ header {
 			float:left;
 			color:$color-one;
 			font-size:36px;
+
+			a {
+				display: block;
+				line-height: 1;
+				text-decoration: none;
+			}
 		}
 
 		.fa {
@@ -31,6 +37,10 @@ header {
 	nav {
 		float:right;
 		margin-top:30px;
+
+		.hamburger-icon {
+			display:none;
+		}
 
 		ul.main-nav {
 			list-style-type:none;

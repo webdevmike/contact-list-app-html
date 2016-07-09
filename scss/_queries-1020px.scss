@@ -4,4 +4,47 @@
 		max-width:768px;
 	}
 
+	main {
+
+		&.single-contact {
+
+			.contact-info {
+
+				.row {
+
+					input[type="text"],
+					input[type="email"] {
+						width:270px;
+					}
+
+					&.vip {
+
+						label {
+							width:270px;
+						}
+					}
+				}
+			}
+
+			.contact-preview {
+				margin-left:60px;
+				word-wrap: break-word;
+
+				.address {
+
+					ul {
+
+						li {
+							font-size:20px;
+
+							&:first-child {
+								font-size:24px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 }

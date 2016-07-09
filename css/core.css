@@ -37,7 +37,7 @@ iframe {
   width: 100%;
 }
 
-.clear:after, .content-container:after, header .logo:after, header nav ul.main-nav:after, main ul.contact-list > li:after, main.single-contact .contact-info .row:after, main.single-contact .contact-info .actions:after {
+.clear:after, .content-container:after, header .logo:after, header nav ul.main-nav:after, main ul.contact-list > li:after, main.single-contact .contact-info .row:after, main.single-contact .contact-info .actions:after, main.single-contact .contact-preview:after, main.single-contact.edit .contact-info:after {
   display: block;
   clear: both;
   content: "";
@@ -116,11 +116,11 @@ button.generic-btn {
   line-height: 1;
   padding: 15px 55px;
   cursor: pointer;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
 }
 button.generic-btn:hover {
   background-color: rgba(226, 77, 51, 0.9);
@@ -149,6 +149,11 @@ header .logo h1 {
   color: #e24d33;
   font-size: 36px;
 }
+header .logo h1 a {
+  display: block;
+  line-height: 1;
+  text-decoration: none;
+}
 header .logo .fa {
   float: left;
   margin-right: 12px;
@@ -159,6 +164,9 @@ header .logo .fa {
 header nav {
   float: right;
   margin-top: 30px;
+}
+header nav .hamburger-icon {
+  display: none;
 }
 header nav ul.main-nav {
   list-style-type: none;
@@ -423,6 +431,24 @@ footer .note {
   .content-container {
     max-width: 768px;
   }
+
+  main.single-contact .contact-info .row input[type="text"],
+  main.single-contact .contact-info .row input[type="email"] {
+    width: 270px;
+  }
+  main.single-contact .contact-info .row.vip label {
+    width: 270px;
+  }
+  main.single-contact .contact-preview {
+    margin-left: 60px;
+    word-wrap: break-word;
+  }
+  main.single-contact .contact-preview .address ul li {
+    font-size: 20px;
+  }
+  main.single-contact .contact-preview .address ul li:first-child {
+    font-size: 24px;
+  }
 }
 /**
 ---------------------------------------------------------------
@@ -432,6 +458,96 @@ footer .note {
 @media screen and (max-width: 788px) {
   .content-container {
     max-width: 550px;
+  }
+
+  button.generic-btn {
+    font-size: 19px;
+    padding: 15px 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  header .logo h1,
+  header .logo .fa {
+    font-size: 30px;
+  }
+  header nav {
+    margin-top: 22px;
+  }
+  header nav .hamburger-icon {
+    display: block;
+    float: right;
+  }
+  header nav .hamburger-icon .fa {
+    font-size: 36px;
+    line-height: 1;
+  }
+  header nav ul.main-nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  header nav ul.main-nav li {
+    display: block;
+    float: none;
+    text-align: center;
+    padding-right: 0;
+    border-bottom: 1px solid #c3c3c3;
+  }
+  header nav ul.main-nav li a {
+    display: block;
+    background-color: #f8f8f8;
+    padding: 15px 0;
+  }
+  header nav.show-mobile-menu ul.main-nav {
+    display: block;
+  }
+
+  main {
+    min-height: 0;
+  }
+  main.home ul.home-nav {
+    padding: 60px 0;
+  }
+  main.home ul.home-nav li {
+    font-size: 19px;
+  }
+  main.home ul.home-nav li:nth-child(2) {
+    padding: 0 25px;
+  }
+  main.home .vip-contacts {
+    padding-bottom: 60px;
+  }
+  main.no-page h1 {
+    font-size: 36px;
+    padding: 60px 0;
+  }
+  main.single-contact .contact-info {
+    float: none;
+  }
+  main.single-contact .contact-info .row input[type="text"],
+  main.single-contact .contact-info .row input[type="email"] {
+    width: 425px;
+  }
+  main.single-contact .contact-info .row.vip label {
+    width: 425px;
+  }
+  main.single-contact .contact-preview {
+    float: none;
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  main.single-contact.edit .contact-info .actions {
+    width: 425px;
+    float: right;
+  }
+  main.single-contact.edit .contact-info .actions button.generic-btn {
+    margin-left: 0;
   }
 }
 /**
@@ -443,6 +559,96 @@ footer .note {
   .content-container {
     max-width: 360px;
   }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  header {
+    height: 70px;
+  }
+  header .logo h1,
+  header .logo .fa {
+    font-size: 26px;
+  }
+  header nav {
+    margin-top: 18px;
+  }
+  header nav .hamburger-icon .fa {
+    font-size: 34px;
+  }
+  header nav ul.main-nav {
+    top: 70px;
+  }
+
+  main ul.contact-list > li {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  main ul.contact-list > li .icon {
+    width: 20%;
+    text-align: left;
+  }
+  main ul.contact-list > li .edit {
+    width: 80%;
+    margin-top: 25px;
+  }
+  main ul.contact-list > li .address {
+    width: 80%;
+    padding-left: 0;
+    word-wrap: break-word;
+  }
+  main ul.contact-list > li .address ul li {
+    font-size: 19px;
+  }
+  main ul.contact-list > li .address ul li:first-child {
+    font-size: 22px;
+  }
+  main.home ul.home-nav li {
+    display: block;
+  }
+  main.contacts {
+    padding: 30px 0;
+  }
+  main.no-page h1 {
+    font-size: 30px;
+  }
+  main.single-contact {
+    padding: 30px 0;
+  }
+  main.single-contact h2 {
+    margin-bottom: 20px;
+  }
+  main.single-contact .confirmation {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  main.single-contact .contact-info .row {
+    margin-bottom: 15px;
+  }
+  main.single-contact .contact-info .row label {
+    float: none;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1;
+    padding-bottom: 7px;
+  }
+  main.single-contact .contact-info .row input[type="text"],
+  main.single-contact .contact-info .row input[type="email"] {
+    float: none;
+    width: 100%;
+  }
+  main.single-contact .contact-info .row.vip label {
+    float: none;
+    width: 100%;
+  }
+  main.single-contact .contact-preview {
+    margin-left: 0;
+  }
+  main.single-contact.edit .contact-info .actions {
+    width: 100%;
+    float: none;
+  }
 }
 /**
 ---------------------------------------------------------------
@@ -453,6 +659,12 @@ footer .note {
   .content-container {
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  header,
+  main,
+  footer,
+  .content-container {
     min-width: 300px;
   }
 }

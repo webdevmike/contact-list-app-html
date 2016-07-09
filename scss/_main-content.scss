@@ -184,6 +184,7 @@ main {
 		.contact-preview {
 			float:left;
 			margin-left:130px;
+			@extend .clear;
 
 			.icon {
 				float:left;
@@ -229,6 +230,7 @@ main {
 		&.edit {
 
 			.contact-info {
+				@extend .clear;
 
 				.actions {
 
