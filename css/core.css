@@ -190,7 +190,7 @@ header nav ul.main-nav li a {
   color: #232323;
   text-decoration: none;
 }
-header nav ul.main-nav li a:hover, header nav ul.main-nav li a.current {
+header nav ul.main-nav li a:hover, header nav ul.main-nav li a.active {
   color: #e24d33;
   text-decoration: underline;
 }

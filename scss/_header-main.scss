@@ -58,7 +58,7 @@ header {
 					text-decoration:none;
 
 					&:hover,
-					&.current {
+					&.active {
 						color:$color-one;
 						text-decoration:underline;
 					}
